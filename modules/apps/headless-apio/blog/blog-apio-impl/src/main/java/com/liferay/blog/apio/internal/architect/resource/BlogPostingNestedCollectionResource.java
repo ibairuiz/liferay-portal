@@ -36,10 +36,10 @@ import com.liferay.portal.kernel.exception.PortalException;
 import com.liferay.portal.kernel.service.ServiceContext;
 import com.liferay.portal.kernel.workflow.WorkflowConstants;
 import com.liferay.site.apio.architect.identifier.WebSiteIdentifier;
+import com.liferay.tag.apio.identifier.TagIdentifier;
 
 import java.util.List;
 
-import com.liferay.tag.apio.identifier.TagIdentifier;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
