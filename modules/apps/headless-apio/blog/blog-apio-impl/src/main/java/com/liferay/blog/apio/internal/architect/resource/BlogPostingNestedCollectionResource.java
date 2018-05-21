@@ -39,6 +39,7 @@ import com.liferay.site.apio.architect.identifier.WebSiteIdentifier;
 
 import java.util.List;
 
+import com.liferay.tag.apio.identifier.TagIdentifier;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
@@ -121,6 +122,8 @@ public class BlogPostingNestedCollectionResource
 			BlogsEntry::getCoverImageFileEntryId
 		).addRelatedCollection(
 			"comments", CommentIdentifier.class
+		).addRelatedCollection(
+			"tags", TagIdentifier.class
 		).addString(
 			"alternativeHeadline", BlogsEntry::getSubtitle
 		).addString(
